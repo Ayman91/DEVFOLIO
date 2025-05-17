@@ -1,0 +1,38 @@
+/* IMPORTING ALL CSS COMPONENTS */
+@import url('../components/header.css');
+@import url('../components/about.css');
+@import url('../components/services.css');
+@import url('../components/numbers.css');
+@import url('../components/portfolio.css');
+@import url('../components/testimonials.css');
+@import url('../components/blog.css');
+@import url('../components/contact.css');
+@import url('../components/footer.css');
+
+/* bootstrap icons */
+@font-face {
+  font-family: 'bootstrap-icons';
+  src: url('/css/webfonts/bootstrap-icons.woff2') format('woff2');
+}
+
+/* GLOBAL VARIABLES */
+:root {
+  /* typography */
+  /* --primary-font: 'Montserrat', sans-serif; */
+  /* --secondary-font: 'Poppins', sans-serif; */
+
+  /* font-size */
+  --font-size-12: 0.75rem; /* 12px */
+  --font-size-14: 0.875rem; /* 14px */
+  --font-size-15: 0.9375rem; /* 15px */
+  --font-size-18: 1.125rem; /* 18px */
+  --font-size-30: 1.875rem; /* 30px */
+  --font-size-50: 3.125rem; /* 50px */
+  --font-size-60: 3.75rem; /* 60px */
+  --font-size-72: 4.5rem; /* 72px */
+
+  /* font weight */
+  --font-weight-200: 200;
+  --font-weight-800: 800;
+  --font-weight-900: 900;
+}

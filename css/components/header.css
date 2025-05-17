@@ -1,0 +1,74 @@
+header {
+  /** NAV SECTION */
+  nav {
+    &.scrolled {
+      /* nav scroll styles */
+      padding: 15px;
+      transition: all 0.3s ease;
+      background-color: rgba(0, 0, 0, 0.9);
+      box-shadow: 0px 5px 30px 5px rgba(0, 0, 0, 0.1);
+      /* revert logo text color on scroll */
+      a.navbar-brand {
+        color: white;
+      }
+      ul li > a.nav-link {
+        color: white !important;
+        /* revert underline color on scroll */
+        &::after {
+          background-color: white;
+          transition: width 0.5s ease-out;
+        }
+      }
+    }
+    /* selecting logo  */
+    a.navbar-brand {
+      color: white;
+      margin-right: unset;
+      letter-spacing: 1px;
+      &:hover {
+        color: white;
+      }
+    }
+
+    /* selecting nav links */
+    ul li a.nav-link {
+      position: relative;
+      --padding-lr-value: 8px;
+      color: white !important;
+      text-transform: capitalize;
+      font-family: var(--secondary-font);
+
+      /* underline link styles */
+      &::after {
+        width: 0;
+        content: '';
+        height: 2px;
+        position: absolute;
+        background-color: white;
+        left: var(--padding-lr-value);
+        bottom: var(--padding-lr-value);
+        transition: width 0.5s ease-out;
+      }
+
+      /* Hover state */
+      &:hover::after {
+        width: calc(100% - 2 * var(--padding-lr-value));
+      }
+
+      /* Active state */
+      &.active::after {
+        width: calc(100% - 2 * var(--padding-lr-value));
+      }
+    }
+  }
+
+  /** HEROBOX SECTION */
+  section#herobox {
+    background: linear-gradient(to bottom, #000000a6, #000000a6),
+      url('../../imgs/hero-bg.jpg') no-repeat center / cover;
+    background-attachment: fixed;
+    h1 {
+      font-size: var(--font-size-72);
+    }
+  }
+}
