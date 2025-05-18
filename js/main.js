@@ -55,5 +55,3 @@ new PureCounter({
   formater: 'us-US', // Number toLocaleString locale/format, by default, is "en-US" [string|boolean:false]
   separator: false, // This will enable/disable comma separator for thousands. Use it to set the symbol too [boolean|char|string]
 });
-
-new PureCounter();
