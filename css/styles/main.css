@@ -12,7 +12,7 @@
 /* bootstrap icons */
 @font-face {
   font-family: 'bootstrap-icons';
-  src: url('/css/webfonts/bootstrap-icons.woff2') format('woff2');
+  src: url('../../css/webfonts/bootstrap-icons.woff2') format('woff2');
 }
 
 /* GLOBAL VARIABLES */
