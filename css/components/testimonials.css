@@ -5,6 +5,6 @@ section#testimonial {
       rgba(0, 120, 255, 0.8),
       rgba(0, 120, 255, 0.8)
     ),
-    url('/imgs/overlay-bg.jpg') no-repeat center / cover;
+    url('../../imgs/overlay-bg.jpg') no-repeat center / cover;
   background-attachment: fixed;
 }
